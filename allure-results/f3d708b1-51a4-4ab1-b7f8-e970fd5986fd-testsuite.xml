@@ -1,0 +1,107 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1630032714788' stop='1630032744081'>
+    <name>The Internet Website homepage: As an user, I can open internet website</name>
+    <title>The Internet Website homepage: As an user, I can open internet website</title>
+    <test-cases>
+        <test-case start='1630032714789' status='passed' stop='1630032714791'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1630032714792' status='broken' stop='1630032744078'>
+            <name>Given I open the browser and load the url &lt;the-internet.herokuapp.com/></name>
+            <title>Given I open the browser and load the url &lt;the-internet.herokuapp.com/></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1630032714795' status='broken' stop='1630032744078'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='133abd8d-64e5-45e1-ab96-0199c7d1ef43-attachment.json' type='application/json' size='65'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>unknown error: net::ERR_CONNECTION_REFUSED</message>
+                <stack-trace>unknown error: net::ERR_CONNECTION_REFUSED
+                  (Session info: chrome=92.0.4515.159)
+                Backtrace:
+                	Ordinal0 [0x011F2A33+2501171]
+                	Ordinal0 [0x0118D1C1+2085313]
+                	Ordinal0 [0x01091FA8+1056680]
+                	Ordinal0 [0x0108EBD1+1043409]
+                	Ordinal0 [0x01084E79+1003129]
+                	Ordinal0 [0x01085A80+1006208]
+                	Ordinal0 [0x010850CA+1003722]
+                	Ordinal0 [0x010847FA+1001466]
+                	Ordinal0 [0x0108398D+997773]
+                	Ordinal0 [0x01083C46+998470]
+                	Ordinal0 [0x0109357A+1062266]
+                	Ordinal0 [0x010E4E8D+1396365]
+                	Ordinal0 [0x010D5653+1332819]
+                	Ordinal0 [0x010E48BC+1394876]
+                	Ordinal0 [0x010D551B+1332507]
+                	Ordinal0 [0x010B1D74+1187188]
+                	Ordinal0 [0x010B2BD9+1190873]
+                	GetHandleVerifier [0x0136EFE6+1504438]
+                	GetHandleVerifier [0x0141DDA5+2220661]
+                	GetHandleVerifier [0x01275589+481881]
+                	GetHandleVerifier [0x01274639+477961]
+                	Ordinal0 [0x011928BD+2107581]
+                	Ordinal0 [0x01196728+2123560]
+                	Ordinal0 [0x01196862+2123874]
+                	Ordinal0 [0x0119FA81+2161281]
+                	BaseThreadInitThunk [0x774CFA29+25]
+                	RtlGetAppContainerNamedObjectPath [0x77667A7E+286]
+                	RtlGetAppContainerNamedObjectPath [0x77667A4E+238]
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1630032744078' status='pending' stop='1630032744079'>
+            <name>Then I should see a header with text welcome to the internet</name>
+            <title>Then I should see a header with text welcome to the internet</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1630032744079' status='passed' stop='1630032744080'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
