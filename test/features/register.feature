@@ -7,7 +7,7 @@ Feature: Chai page
         And I select gender <gender> years <yrs> favorite chai <favchai> and reason <reason>
         And I select continent <continent> and commands <command>
         And I click on submit button
-        Then I validat page header "We're passionate about tea. "
+        Then I validat page header "We're passionate about tea."
 
         Examples:
             | fname | lname  | gender | yrs | favchai | reason             | continent | command       |
