@@ -1,4 +1,4 @@
-import { setText } from '../Utils/commands';
+import { selectDropdown, selectVisibleText, setText } from '../Utils/commands';
 import Page from './page'
 
 
@@ -51,28 +51,28 @@ class ChaiRegister extends Page {
 
     async selectGender(gender: string) {
 
-        await this.selectDropdown(await this.gender_radio, gender)
+        await selectDropdown(this.gender_radio, gender)
     }
 
     async selectExperience(years: string) {
 
-        await this.selectDropdown(await this.experience_radio, years)
+        await selectDropdown (this.experience_radio, years)
     }
 
 
     async selectFavChai(chaiType: string) {
 
-        await this.selectDropdown(await this.favchai_checkbox, chaiType)
+        await selectDropdown(this.favchai_checkbox, chaiType)
     }
 
     async selectReason(reason: string) {
 
-        await this.selectDropdown(await this.whychai_checkbox, reason)
+        await selectDropdown(this.whychai_checkbox, reason)
     }
 
     async selectContinent(continent: string) {
 
-        await (await this.continent_dropdown).selectByVisibleText(continent)
+        await selectVisibleText(this.continent_dropdown,continent)
     }
 
     async selectSeleniumCommand(command: string) {
