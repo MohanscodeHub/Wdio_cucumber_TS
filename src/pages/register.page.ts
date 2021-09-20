@@ -1,4 +1,4 @@
-import { selectDropdown, selectVisibleText, setText } from '../Utils/commands';
+import { click, selectDropdown, selectVisibleText, setText } from 'src/Utils/commands';
 import Page from './page'
 
 
@@ -77,12 +77,13 @@ class ChaiRegister extends Page {
 
     async selectSeleniumCommand(command: string) {
 
-        await (await this.selCommands_multiselect).selectByVisibleText(command)
+        
+        await selectVisibleText(this.selCommands_multiselect,command)
     }
 
     async clickonSubmitBtn() {
 
-        await (await this.submit_btn).click()
+        await click(this.submit_btn)
     }
 
 

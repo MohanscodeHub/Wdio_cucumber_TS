@@ -21,7 +21,7 @@ export const config: WebdriverIO.Config = {
     // will be called from there.
     //
     specs: [
-        './test/features/**/*.feature'
+        './test/features/**/register.feature'
     ],
     // Patterns to exclude.
     exclude: [
