@@ -5,7 +5,7 @@ import supertest from 'supertest'
 import { APICalls } from 'src/enums/APICalls';
 
 const request = supertest(BASE_URI)
-let response: supertest.Response;
+let response: supertest.Response; // response type from supertest -class level varaible can be used through out the class
 
 const payload = {
     "name": "Mohan",
