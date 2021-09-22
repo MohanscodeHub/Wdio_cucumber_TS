@@ -29,8 +29,9 @@ When(/^I make GET (.+) api call$/, async (endpoint: string) => {
 
 Then(/^I validate the search result$/, async () => {
     const ui_status = await UsersPage.getStatusText();
-    const ui_response = JSON.parse(await UsersPage.getOutputText()); // parsing string tojson
-
+    const ui_response = JSON.parse(await UsersPage.getOutputText()); // parsing string tojson from UI
+    console.log( "UI_status "+ui_status)
+    console.log("UI_response" +ui_response)
     expect(ui_status).toContain(response.statusCode.toString())
     expect(ui_response).toEqual(response.body)
     expect(ui_response.data.email).toEqual(response.body.data.email)
