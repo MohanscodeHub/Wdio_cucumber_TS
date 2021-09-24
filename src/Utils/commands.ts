@@ -36,6 +36,6 @@ export const selectVisibleText = async (element: ChainablePromiseElement<Promise
 
 export const click = async (element: ChainablePromiseElement<Promise<WebdriverIO.Element>>) => {
 
-    (await element).click()
+    await element.click()
 
 }
