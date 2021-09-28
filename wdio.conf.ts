@@ -41,6 +41,16 @@ export const config: WebdriverIO.Config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
+
+    suites :{
+
+        smoke: ['./test/features/smoke/*.feature'],
+          
+        regression: ['./test/features/regression/*.feature'],
+
+    },
+
+    
     //
     // ============
     // Capabilities
